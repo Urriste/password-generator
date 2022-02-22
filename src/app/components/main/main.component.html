@@ -1,0 +1,21 @@
+<div class="container">
+    <form class="form" [formGroup]='form'>
+        
+        <label>Password length</label>
+        <input type="number" formControlName='length' min="5" max="20">
+
+        <label>Include lowercase</label>
+        <input type="checkbox" formControlName='includeLowercase'>
+
+        <label>Include uppercase</label>
+        <input type="checkbox" formControlName='includeUppercase'>
+
+        <label>Include symbols</label>
+        <input type="checkbox" formControlName='includeSymbol'>
+        
+        <label>Include number</label>
+        <input type="checkbox" formControlName='includeNumber'>
+
+        <button (click)="submit($event)">Generate!</button>
+    </form>
+</div>
