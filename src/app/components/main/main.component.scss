@@ -4,11 +4,23 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
 
     .form{
         
     display: flex;
     justify-content: center;
     flex-direction: column;
+    margin-bottom: 50px;
+    }
+
+    .password-container{
+        padding: 5px 10px;
+        background-color: black;
+
+        .password{
+            color:white;
+            font-weight: bolder;
+        }
     }
 }

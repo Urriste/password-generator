@@ -18,4 +18,10 @@
 
         <button (click)="submit($event)">Generate!</button>
     </form>
+    <div class="password-container" *ngIf="password">
+
+           <p class="password"> {{password}}</p>
+        
+    </div>
+    
 </div>
